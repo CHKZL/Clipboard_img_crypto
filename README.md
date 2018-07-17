@@ -5,7 +5,7 @@
 昨天在微博上看见 @B1llyHerrington 发的js的网页版项目，大家可以去看看，我摸了一个.net版项目的出来
 
 ## 看不懂代码&&不想下载工程项目的选手用的执行程序下载地址
-
+https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/自动加解密剪切板图片/bin/Debug/自动加解密剪切板图片.exe
 # 如何使用
 ## 加密
 * Ctrl+C复制QQ窗口里的图或者任何图片文件
@@ -25,15 +25,15 @@
 ## 我也上个效果
 加密后：
 
-![加密后](https://github.com/xfgryujk/weibo-img-crypto/blob/master/demo/encrypted.jpg)
+![加密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/2.jpg)
 
 解密后：
 
-![解密后](https://github.com/xfgryujk/weibo-img-crypto/blob/master/demo/decrypted.png)
+![解密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/3.jpg)
 
 原图：
 
-![原图](https://github.com/xfgryujk/weibo-img-crypto/blob/master/demo/origin.jpg)
+![原图](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/1.jpg)
 
 理论上应该是无损的(
 
