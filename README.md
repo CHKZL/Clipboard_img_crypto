@@ -37,6 +37,7 @@ https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切�
 ![原图](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/1.jpg)
 
 理论上应该是无损的(  
+但是似乎达到某个条件就会被QQ二压的样子
   
 ## FA♂Q
 ### XXX卫士之类的提示危险怎么办？
