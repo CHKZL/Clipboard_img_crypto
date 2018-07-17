@@ -5,7 +5,7 @@
 昨天在微博上看见 @B1llyHerrington 发的js的网页版项目，大家可以去看看，我摸了一个.net版项目的出来
 
 ## 看不懂代码&&不想下载工程项目的选手用的执行程序下载地址
-https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/自动加解密剪切板图片/bin/Debug/自动加解密剪切板图片.exe
+https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片.exe
 # 如何使用
 ## 加密
 * Ctrl+C复制QQ窗口里的图或者任何图片文件
