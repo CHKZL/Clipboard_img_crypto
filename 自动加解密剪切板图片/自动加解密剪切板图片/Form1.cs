@@ -128,83 +128,6 @@ namespace 自动加解密剪切板图片
             }
         }
 
-        private static string GetBase64(string str)
-        {
-            byte[] bytes = Encoding.Default.GetBytes(str);
-            return Convert.ToBase64String(bytes);
-        }
-
-
-        private static string BitmapGetBase64(string file)
-        {
-            System.Drawing.Bitmap bmp1 = new System.Drawing.Bitmap(file);
-            using (MemoryStream ms1 = new MemoryStream())
-            {
-                bmp1.Save(ms1, System.Drawing.Imaging.ImageFormat.Jpeg);
-                byte[] arr1 = new byte[ms1.Length];
-                ms1.Position = 0;
-                ms1.Read(arr1, 0, (int)ms1.Length);
-                ms1.Close();
-                return Convert.ToBase64String(arr1);
-            }
-        }
-
-        private static Bitmap usBase64(string file)
-        {
-            byte[] arr = Convert.FromBase64String(file);
-            using (MemoryStream ms = new MemoryStream(arr))
-            {
-                Bitmap bmp = new Bitmap(ms);
-                return bmp;
-            }
-        }
-        #region DES 加密解密
-
-        /// <summary>
-        ///  DES 加密
-        /// </summary>
-        /// <param name="source">原文</param>
-        /// <param name="keyVal">秘钥</param>
-        /// <param name="ivVal">向量</param>
-        /// <returns></returns>
-        public static string Des(string source, string keyVal, string ivVal)
-        {
-            try
-            {
-                byte[] data = Encoding.UTF8.GetBytes(source);
-                var des = new DESCryptoServiceProvider { Key = Encoding.ASCII.GetBytes(keyVal.Length > 8 ? keyVal.Substring(0, 8) : keyVal), IV = Encoding.ASCII.GetBytes(ivVal.Length > 8 ? ivVal.Substring(0, 8) : ivVal) };
-                var desencrypt = des.CreateEncryptor();
-                byte[] result = desencrypt.TransformFinalBlock(data, 0, data.Length);
-                return BitConverter.ToString(result);
-            }
-            catch { return "转换出错！"; }
-        }
-
-        /// <summary>
-        /// DES 解密
-        /// </summary>
-        /// <param name="source">原文</param>
-        /// <param name="keyVal">秘钥</param>
-        /// <param name="ivVal">向量</param>
-        public static string UnDes(string source, string keyVal, string ivVal)
-        {
-            try
-            {
-                string[] sInput = source.Split("-".ToCharArray());
-                byte[] data = new byte[sInput.Length];
-                for (int i = 0; i < sInput.Length; i++)
-                {
-                    data[i] = byte.Parse(sInput[i], NumberStyles.HexNumber);
-                }
-                var des = new DESCryptoServiceProvider { Key = Encoding.ASCII.GetBytes(keyVal.Length > 8 ? keyVal.Substring(0, 8) : keyVal), IV = Encoding.ASCII.GetBytes(ivVal.Length > 8 ? ivVal.Substring(0, 8) : ivVal) };
-                var desencrypt = des.CreateDecryptor();
-                byte[] result = desencrypt.TransformFinalBlock(data, 0, data.Length);
-                return Encoding.UTF8.GetString(result);
-            }
-            catch { return "解密出错！"; }
-        }
-
-        #endregion
 
         private int[] GetRandomIntValues(int expectedCouont)
         {
@@ -226,57 +149,14 @@ namespace 自动加解密剪切板图片
         {
             
         }
-        /// <summary>
-        /// 执行JS
-        /// </summary>
-        /// <param name="sCode">代码的字符串</param>
-        /// <param name="method">方法名</param>
-        /// <param name="sExpression">参数体</param>
-        /// <param name="language">脚本语言（JScript/VBScript）</param>
-        /// <returns>返回值</returns>
-        public static string ExecuteScript(string sCode, string method, string sExpression, string language)
-        {
-            MSScriptControl.ScriptControl scriptControl = new MSScriptControl.ScriptControl();
-            scriptControl.UseSafeSubset = false;
-            scriptControl.Language = language;
-            scriptControl.AllowUI = true;
-            scriptControl.AddCode(sCode);
-
-            object[] param = sExpression.Split(',');
-
-            object[] param1 = new object[param.Length];
-            for (int i = 0; i < param.Length; i++)
-            {
-                param1[i] = param[i];
-            }
-            try
-            {
-                string str1 = scriptControl.Run(method, param1).ToString();
-                return str1;
-            }
-            catch (COMException comex)
-            {
-                string str = comex.Message;
-            }
-            catch (Exception ex)
-            {
-                string str = ex.Message;
-            }
-            return null;
-        }
-        Form frmOpener;
+       
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            this.Hide(); //这里只是隐藏主窗口，后台在默默加载数据。
+          
           
         }
-        public void ShowLogin(Form frmMain)
-        {
-
-            frmOpener = frmMain;
-            this.Show();
-        }
+      
 
         private void T1_TextChanged(object sender, EventArgs e)
         {
