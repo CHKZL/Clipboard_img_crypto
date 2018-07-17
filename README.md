@@ -36,6 +36,10 @@ https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切�
 ![原图](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/1.jpg)
 
 理论上应该是无损的(  
+  
+## FA♂Q
+### XXX卫士之类的提示危险怎么办？
+程序在启动的时候为了监听快捷键会加载全局键盘钩子，这个行为可能会被这类软件给提示危险，如果你是在不放心，可以不使用或者下载上面的源文件查看代码
 
 
 emm剩下的想到什么再写
