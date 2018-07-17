@@ -25,11 +25,11 @@ https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切�
 ## 我也上个效果
 加密后：
 
-![加密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/2.PNG)
+![加密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/2.png)
 
 解密后：
 
-![解密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/3.PNG)
+![解密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/3.png)
 
 原图：
 
