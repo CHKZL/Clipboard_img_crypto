@@ -4,7 +4,7 @@
 ##为何要写这个东西(当然是为了X图time啊！
 昨天在微博上看见 @B1llyHerrington 发的js的网页版项目，大家可以去看看，我摸了一个.net版项目的出来
 
-## 看不懂代码&&不想下载工程项目的选手用的执行程序下载地址
+## 看不懂代码&&不想下载工程项目的选手用的执行程序下载地址(右键另存为即可)
 https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片.exe
 # 如何使用
 ## 加密
@@ -25,11 +25,11 @@ https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切�
 ## 我也上个效果
 加密后：
 
-![加密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/2.jpg)
+![加密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/2.PNG)
 
 解密后：
 
-![解密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/3.jpg)
+![解密后](https://github.com/CHKZL/Clipboard_img_crypto/blob/master/自动加解密剪切板图片/3.PNG)
 
 原图：
 
