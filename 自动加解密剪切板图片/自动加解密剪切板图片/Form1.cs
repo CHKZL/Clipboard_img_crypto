@@ -66,8 +66,26 @@ namespace 自动加解密剪切板图片
                         Clipboard.GetFileDropList().CopyTo(files, 0);
                         foreach (string file in files)
                         { }
+                        Bitmap BB=new Bitmap(1,1);
                         // Image img = Bitmap.FromFile(files[files.Length-1]);
-                        Bitmap BB = new Bitmap(files[files.Length - 1]);
+                        try
+                        {
+                            BB = new Bitmap(Clipboard.GetImage());
+                        }
+                        catch (Exception)
+                        {
+                            try
+                            {
+                                BB = new Bitmap(files[files.Length - 1]);
+                            }
+                            catch (Exception)
+                            {
+                                MessageBox.Show("好像碰到了啥暂不支持的方式或者格式..");
+
+                            }
+                           
+                          
+                        }
                         if (BB != null)
                         {
                             int Width = BB.Width;
@@ -88,8 +106,17 @@ namespace 自动加解密剪切板图片
                                     newb.SetPixel((i % Width), (i / Width), BB.GetPixel((list[i] % Width), (list[i] / Width)));
 
                                 }
+                                
                                 Image img = newb;
-                                Clipboard.SetImage(img);
+
+                              //  img.Save("./s.Gif", System.Drawing.Imaging.ImageFormat.Gif);
+                                //Clipboard.SetDataObject(img);
+                                //DataFormats.Format format = DataFormats.GetFormat("GIF");
+                                //Clipboard.SetData(format.Name,img);
+
+                                 Clipboard.SetImage(img);
+                                //Clipboard.SetImage(new Bitmap("./s.gif"));
+                                img.Dispose();
                                 // MessageBox.Show("49");
                             }
                             else
@@ -102,8 +129,11 @@ namespace 自动加解密剪切板图片
 
                                 }
                                 Image img = newb;
+                                //img.Save("./s.Gif", System.Drawing.Imaging.ImageFormat.Gif);
+                                //Bitmap newc = new Bitmap("./s.Gif");
                                 Clipboard.SetImage(img);
-
+                                // Clipboard.SetImage(new Bitmap("./s.gif"));
+                                img.Dispose();
                                 //    MessageBox.Show("50");
                             }
                             Random A = new Random();
@@ -127,6 +157,7 @@ namespace 自动加解密剪切板图片
                
             }
         }
+
 
 
         private int[] GetRandomIntValues(int expectedCouont)

@@ -19,3 +19,5 @@ D:\Git\自动加解密剪切板图片\自动加解密剪切板图片\obj\Debug\�
 E:\YXM\Seafile\Git私有库\自动加解密剪切板图片\自动加解密剪切板图片\obj\Debug\Interop.MSScriptControl.dll
 E:\YXM\Seafile\Git私有库\自动加解密剪切板图片\自动加解密剪切板图片\obj\Debug\自动加解密剪切板图片.csproj.ResolveComReference.cache
 E:\YXM\Seafile\Git私有库\自动加解密剪切板图片\自动加解密剪切板图片\obj\Debug\自动加解密剪切板图片.csprojAssemblyReference.cache
+D:\Git\自动加解密剪切板图片\自动加解密剪切板图片\obj\Debug\Interop.MSScriptControl.dll
+D:\Git\自动加解密剪切板图片\自动加解密剪切板图片\obj\Debug\自动加解密剪切板图片.csproj.ResolveComReference.cache
